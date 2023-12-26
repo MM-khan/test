@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="Javascript/test.js"></script>
+
+    <title>Document</title>
+    <style>
+        .bg{
+           
+            background-color: gray;
+        }
+        h3{
+            text-align: center;
+        }
+        input{
+            width: 98%;
+        }
+        .on{
+            width: 24%;
+        }
+        
+        .on:hover{
+            background-color:lightgreen;
+        }
+        .off{
+            width: 24%;
+        }
+        
+        .off:hover{
+           background-color:lightcoral;
+        }
+        .bttn-no{
+            width: 24%;
+        }
+       
+        .bttn-no:hover{
+            background-color: lightgrey;
+        }
+    </style>
+
+</head>
+<body>
+    <br><br><br>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col bg">
+            <h3><i>Calculator</i></h3>
+            <form action="" name="calcform"><input type="text" name="calc"></form>
+            <br><br>
+            <button type="button" class="on btn-success" onclick="calcform.calc.value ='0'">ON</button>
+            <button type="button" class="off btn-warning" onclick="calcform.calc.value =''">OFF</button>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value +='( )'">( )</button>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value ='%'">%</button>
+            <br>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value +='1'">1</button>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value +='2'">2</button>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value +='3'">3</button>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value ='*'">*</button>
+            <br>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value +='4'">4</button>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value +='5'">5</button>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value +='6'">6</button>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value ='/'">/</button>
+            <br>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value +='7'">7</button>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value +='8'">8</button>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value +='9'">9</button>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value ='-'">-</button>
+            <br>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value ='.'">.</button>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value +='0'">0</button>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value =eval(calcform.calc.value)">=</button>
+            <button type="button" class="bttn-no" onclick="calcform.calc.value ='+'">+</button>
+             <br><br>
+            </div>
+          
+        </div>
+    </div>
+</body>
+</html>
